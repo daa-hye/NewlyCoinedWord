@@ -33,7 +33,7 @@
                                             <outletCollection property="gestureRecognizers" destination="RZz-2T-Lbo" appends="YES" id="2Mk-Hg-iK8"/>
                                         </connections>
                                     </label>
-                                    <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vIl-15-cyG">
+                                    <label opaque="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vIl-15-cyG">
                                         <rect key="frame" x="51.333333333333329" y="0.0" width="41.333333333333329" height="30"/>
                                         <gestureRecognizers/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -43,7 +43,7 @@
                                             <outletCollection property="gestureRecognizers" destination="B9V-Kb-EIG" appends="YES" id="9mL-tn-hTm"/>
                                         </connections>
                                     </label>
-                                    <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hp4-dv-fts">
+                                    <label opaque="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hp4-dv-fts">
                                         <rect key="frame" x="102.66666666666667" y="0.0" width="41.333333333333329" height="30"/>
                                         <gestureRecognizers/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -53,7 +53,7 @@
                                             <outletCollection property="gestureRecognizers" destination="JZr-gK-Wdt" appends="YES" id="C2Q-VJ-4AP"/>
                                         </connections>
                                     </label>
-                                    <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LQZ-lY-2sp">
+                                    <label opaque="NO" tag="3" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LQZ-lY-2sp">
                                         <rect key="frame" x="154" y="0.0" width="41.333333333333343" height="30"/>
                                         <gestureRecognizers/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -145,6 +145,7 @@
                         </connections>
                     </view>
                     <connections>
+                        <outlet property="backgroundimageView" destination="N0T-Cn-c2G" id="h5x-bs-wIk"/>
                         <outlet property="searchBarView" destination="Rnh-gO-bvC" id="Mcf-8V-hHO"/>
                         <outlet property="searchTextField" destination="9uW-Mt-LDD" id="BoH-Cc-9CM"/>
                         <outlet property="wordListStackView" destination="XcU-el-PsC" id="mJb-Ya-RB8"/>

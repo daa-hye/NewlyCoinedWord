@@ -14,6 +14,7 @@ class SearchViewController: UIViewController {
     @IBOutlet var wordListStackView: UIStackView!
     @IBOutlet var wordLabelList: [UILabel]!
     @IBOutlet var wordMeaingLabel: UILabel!
+    @IBOutlet var backgroundimageView: UIImageView!
 
     let coinedWord = [
         "중꺾마" : "중요한건 꺾이지 않는 마음",
@@ -35,6 +36,7 @@ class SearchViewController: UIViewController {
         setSearchBarDesign()
         setMeaningLabelDesign()
         setWordData()
+        backgroundimageView.image = UIImage(named: "word_logo")
     }
 
     @IBAction func searchButtonDidTap(_ sender: UITapGestureRecognizer) {
@@ -43,13 +45,25 @@ class SearchViewController: UIViewController {
     }
 
     @IBAction func searchTextFieldKeyboardDidTap(_ sender: UITextField) {
-        let searchKeyword = searchTextField.text
-        if coinedWord.keys.contains(searchKeyword ?? "") {
-            wordMeaingLabel.text = coinedWord[searchKeyword ?? ""]
-        } else if searchKeyword == "" {
+        if let searchKeyword = searchTextField.text {
+            if searchKeyword.count < 2 {
+                let alert = UIAlertController(title: "입력 오류", message: "두 글자 이상 입력해주세요", preferredStyle: .alert)
+                let confirm = UIAlertAction(title: "확인", style: .cancel)
+                alert.addAction(confirm)
 
-        } else {
-            wordMeaingLabel.text = "등록되어있지 않습니다"
+                backgroundimageView.image = UIImage(named: "word_logo")
+                wordMeaingLabel.text = ""
+                present(alert, animated: true)
+                return
+            }
+
+            if coinedWord.keys.contains(searchKeyword) {
+                backgroundimageView.image = UIImage(named: "background")
+                wordMeaingLabel.text = coinedWord[searchKeyword]
+            } else {
+                wordMeaingLabel.text = "등록되어있지 않습니다"
+                backgroundimageView.image = UIImage(named: "word_logo")
+            }
         }
         setWordData()
     }

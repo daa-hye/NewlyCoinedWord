@@ -7,54 +7,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "AD233DF3-CD39-4680-8A11-882BFF625797"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "NewlyCoinedWorld/Assignment/SearchViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "47"
-            endingLineNumber = "47"
-            landmarkName = "searchTextFieldKeyboardDidTap(_:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "AD233DF3-CD39-4680-8A11-882BFF625797 - aa149af116fc662"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "NewlyCoinedWorld.SearchViewController.searchTextFieldKeyboardDidTap(__C.UITextField) -&gt; ()"
-                  moduleName = "NewlyCoinedWorld"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/dahye/Desktop/dahye/NewlyCoinedWorld/NewlyCoinedWorld/Assignment/SearchViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "46"
-                  endingLineNumber = "46"
-                  offsetFromSymbolStart = "444">
-               </Location>
-               <Location
-                  uuid = "AD233DF3-CD39-4680-8A11-882BFF625797 - aa149af116fc662"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "NewlyCoinedWorld.SearchViewController.searchTextFieldKeyboardDidTap(__C.UITextField) -&gt; ()"
-                  moduleName = "NewlyCoinedWorld"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/dahye/Desktop/dahye/NewlyCoinedWorld/NewlyCoinedWorld/Assignment/SearchViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "46"
-                  endingLineNumber = "46"
-                  offsetFromSymbolStart = "424">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "01E87A2C-EEF9-4358-8026-7195D2FC9A51"
             shouldBeEnabled = "No"
             ignoreCount = "0"
@@ -62,8 +14,8 @@
             filePath = "NewlyCoinedWorld/Assignment/SearchViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "105"
-            endingLineNumber = "105"
+            startingLineNumber = "119"
+            endingLineNumber = "119"
             landmarkName = "setWordData()"
             landmarkType = "7">
          </BreakpointContent>
