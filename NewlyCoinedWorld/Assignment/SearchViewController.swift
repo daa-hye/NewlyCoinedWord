@@ -57,9 +57,32 @@ class SearchViewController: UIViewController {
                 return
             }
 
-            if coinedWord.keys.contains(searchKeyword) {
+            if let word = CoinedWordEnum(rawValue: searchKeyword) {
                 backgroundimageView.image = UIImage(named: "background")
-                wordMeaingLabel.text = coinedWord[searchKeyword]
+                var keyword: String
+                switch word {
+                case .중꺾마 :
+                    keyword = "중요한건 꺾이지 않는 마음"
+                case .중꺾그마:
+                    keyword = "중요한건 꺾였는데도 그냥 하는 마음"
+                case .그잡채:
+                    keyword = "그 자체"
+                case .분좋카:
+                    keyword = "분위기 좋은 카페"
+                case .내봬누:
+                    keyword = "내일 봬요 누나"
+                case .오저치고:
+                    keyword = "오늘 저녁 치킨 고?"
+                case .웃안웃:
+                    keyword = "웃긴데 안웃겨"
+                case .깊꾸:
+                    keyword = "기프티콘 꾸미기"
+                case .쩝쩝박사:
+                    keyword = "맛있는 음식, 음식 조합을 잘 알고 있는 사람"
+                case .꾸웨엑:
+                    keyword = "후회해?"
+                }
+                wordMeaingLabel.text = keyword
             } else {
                 wordMeaingLabel.text = "등록되어있지 않습니다"
                 backgroundimageView.image = UIImage(named: "word_logo")
@@ -98,20 +121,20 @@ class SearchViewController: UIViewController {
     }
 
     func setWordData() {
+        let allWordsList = CoinedWordEnum.allCases
         var keywords: [String] = []
         let currentKeyword = searchTextField.text
 
         while true {
-            let pickedWord = coinedWord.keys.randomElement()!
+            if let pickedWord = allWordsList.randomElement() {
+                guard pickedWord.rawValue != currentKeyword else { continue }
 
-            guard pickedWord != currentKeyword
-            else { continue }
-
-            if !keywords.contains(pickedWord) {
-                keywords.append(pickedWord)
-            }
-            if keywords.count == 4 {
-                break
+                if !keywords.contains(pickedWord.rawValue) {
+                    keywords.append(pickedWord.rawValue)
+                }
+                if keywords.count == 4 {
+                    break
+                }
             }
         }
 
