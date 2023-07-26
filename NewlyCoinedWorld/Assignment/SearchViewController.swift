@@ -16,18 +16,18 @@ class SearchViewController: UIViewController {
     @IBOutlet var wordMeaingLabel: UILabel!
     @IBOutlet var backgroundimageView: UIImageView!
 
-    let coinedWord = [
-        "중꺾마" : "중요한건 꺾이지 않는 마음",
-        "중꺾그마" : "중요한건 꺾였는데도 그냥 하는 마음",
-        "그 잡채" : "그 자체",
-        "분좋카" : "분위기 좋은 카페",
-        "내봬누" : "내일 봬요 누나",
-        "오저치고" : "오늘 저녁 치킨 고?",
-        "웃안웃" : "웃긴데 안웃겨",
-        "깊꾸" : "기프티콘 꾸미기",
-        "쩝쩝박사" : "맛있는 음식, 음식 조합을 잘 알고 있는 사람",
-        "꾸웨엑?" : "후회해?"
-    ]
+//    let coinedWord = [
+//        "중꺾마" : "중요한건 꺾이지 않는 마음",
+//        "중꺾그마" : "중요한건 꺾였는데도 그냥 하는 마음",
+//        "그 잡채" : "그 자체",
+//        "분좋카" : "분위기 좋은 카페",
+//        "내봬누" : "내일 봬요 누나",
+//        "오저치고" : "오늘 저녁 치킨 고?",
+//        "웃안웃" : "웃긴데 안웃겨",
+//        "깊꾸" : "기프티콘 꾸미기",
+//        "쩝쩝박사" : "맛있는 음식, 음식 조합을 잘 알고 있는 사람",
+//        "꾸웨엑?" : "후회해?"
+//    ]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -132,7 +132,7 @@ class SearchViewController: UIViewController {
                 if !keywords.contains(pickedWord.rawValue) {
                     keywords.append(pickedWord.rawValue)
                 }
-                if keywords.count == 4 {
+                if keywords.count == wordLabelList.count {
                     break
                 }
             }
